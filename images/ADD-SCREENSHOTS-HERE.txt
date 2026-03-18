@@ -1,0 +1,20 @@
+DROP YOUR PROJECT SCREENSHOTS HERE
+====================================
+
+Supported formats: .png  .jpg  .jpeg  .webp
+
+Recommended filenames:
+  - currency-converter.png   (for the featured Currency Converter card)
+  - todo-redux.png
+  - password-gen.png
+  - bg-changer.png
+  - react-router.png
+
+After adding an image, update index.html:
+Replace the <div class="screenshot-placeholder"> block with:
+
+  <img src="assets/images/YOUR-FILE.png"
+       alt="Project screenshot"
+       style="width:100%; border-radius:4px; object-fit:cover;" />
+
+See README.md for full instructions.

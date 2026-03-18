@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhruv Prajapati — Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300;400;500&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Three.js Canvas (fixed background) -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- ══════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════ -->
+  <nav>
+    <div class="logo">DP</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="https://github.com/prajdhruv66" target="_blank" rel="noopener" class="nav-github">
+          <!-- GitHub icon -->
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <section id="hero">
+
+    <div class="hero-status">
+      <span class="status-dot"></span>
+      Open to Internships &amp; Collaborations
+    </div>
+
+    <h1 class="hero-name">Dhruv<br/>Prajapati</h1>
+
+    <div class="hero-domains">
+      <span class="domain-pill analytics">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Data Analytics
+      </span>
+      <span class="domain-pill aiml">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        AI &amp; ML
+      </span>
+      <span class="domain-pill frontend">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        Frontend Dev
+      </span>
+    </div>
+
+    <p class="hero-sub">
+      B.E. student building at the intersection of <span>data</span>, <span>intelligence</span>, and <span>design</span>.
+      I turn ideas into working software — one commit at a time.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects →</a>
+      <a href="https://github.com/prajdhruv66" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+      <a href="#contact" class="btn btn-purple">Hire / Collaborate</a>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">Scroll</div>
+
+  </section>
+
+  <!-- ══════════════════════════════════
+       ABOUT
+  ══════════════════════════════════ -->
+  <section id="about">
+
+    <!-- Left column: bio + cards -->
+    <div class="reveal">
+      <p class="section-label">Who I Am</p>
+      <h2 class="section-title">Engineering ideas<br/>into reality.</h2>
+
+      <div class="about-text">
+        <p>
+          I'm <strong>Dhruv Prajapati</strong>, a <strong>Bachelor of Engineering</strong> student
+          with a passion for building products that are both functional and intelligent.
+        </p>
+        <p>
+          My interests span <strong>data analytics</strong> (finding insight in noise),
+          <strong>AI &amp; ML</strong> (building intelligent systems), and
+          <strong>frontend development</strong> (crafting intuitive interfaces).
+          I believe the best engineers understand the full picture — from models to pixels.
+        </p>
+        <p>
+          Currently learning, building, and shipping — always open to exciting projects
+          and internship opportunities.
+        </p>
+      </div>
+
+      <!-- Education Card -->
+      <div class="edu-card">
+        <div class="edu-label">🎓 Education</div>
+        <div class="edu-degree">Bachelor of Engineering</div>
+        <div class="edu-school">Sardar Vallabhbhai Patel Institute of Technology (GTU)</div>
+        <span class="edu-year">2023 – 2027 (Expected)</span>
+      </div>
+
+      <!-- Personal Details Card -->
+      <div class="edu-card" style="margin-top:1rem;">
+        <div class="edu-label">📬 Personal Details</div>
+        <div class="contact-details-list">
+
+          <a href="mailto:prodhruvpraj999@gmail.com" class="contact-detail-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            prodhruvpraj999@gmail.com
+          </a>
+
+          <a href="https://github.com/prajdhruv66" target="_blank" rel="noopener" class="contact-detail-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            github.com/prajdhruv66
+          </a>
+
+          <a href="https://www.linkedin.com/in/dhruv-prajapati-71939a339/" target="_blank" rel="noopener" class="contact-detail-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+            </svg>
+            linkedin.com/in/dhruv-prajapati
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: skills by domain -->
+    <div class="skills-domains reveal">
+
+      <div class="skill-domain-block">
+        <div class="skill-domain-title an">// Data Analytics</div>
+        <div class="skill-chips">
+          <span class="skill-chip an">Python</span>
+          <span class="skill-chip an">Pandas</span>
+          <span class="skill-chip an">NumPy</span>
+          <span class="skill-chip an">Matplotlib</span>
+          <span class="skill-chip an">SQL</span>
+          <span class="skill-chip an">Power BI</span>
+        </div>
+      </div>
+
+      <div class="skill-domain-block">
+        <div class="skill-domain-title ai">// AI &amp; ML</div>
+        <div class="skill-chips">
+          <span class="skill-chip ai">Scikit-learn</span>
+          <span class="skill-chip ai">TensorFlow</span>
+          <span class="skill-chip ai">Keras</span>
+          <span class="skill-chip ai">NLP</span>
+          <span class="skill-chip ai">Jupyter</span>
+        </div>
+      </div>
+
+      <div class="skill-domain-block">
+        <div class="skill-domain-title fe">// Frontend</div>
+        <div class="skill-chips">
+          <span class="skill-chip fe">React</span>
+          <span class="skill-chip fe">JavaScript</span>
+          <span class="skill-chip fe">Redux</span>
+          <span class="skill-chip fe">Tailwind</span>
+          <span class="skill-chip fe">HTML / CSS</span>
+          <span class="skill-chip fe">Vite</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════
+       STATS
+  ══════════════════════════════════ -->
+  <section id="stats">
+    <div class="stat reveal">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">React Projects</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Focus Domains</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num">BE</div>
+      <div class="stat-label">Engineering Student</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Things to Learn</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════ -->
+  <section id="projects">
+
+    <div class="section-header reveal">
+      <p class="section-label">Selected Work</p>
+      <h2 class="section-title">Things I've Built.</h2>
+      <p>React mini-apps from my frontend learning journey — plus upcoming AI &amp; Data projects.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- ── FEATURED: Currency Converter ── -->
+      <div class="project-card fe-card featured reveal">
+        <div class="featured-inner">
+
+          <div style="display:flex; flex-direction:column; height:100%;">
+            <div class="project-category fe">⭐ Featured — Frontend</div>
+            <div class="project-title">Currency Converter</div>
+            <div class="project-desc">
+              Real-time currency conversion app built with React. Uses live exchange-rate APIs to
+              convert between world currencies — custom hooks, clean UI, and instant updates.
+              My most polished React project to date.
+            </div>
+            <div class="project-tags">
+              <span class="tag fe">React</span>
+              <span class="tag fe">Custom Hooks</span>
+              <span class="tag fe">REST API</span>
+              <span class="tag fe">JavaScript</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/prajdhruv66/React-Projects/tree/main/CurrencyConverter"
+                 target="_blank" rel="noopener" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+
+          <!--
+            SCREENSHOT SLOT
+            ─────────────────────────────────────────────────────────────
+            When you have a screenshot ready, replace the div below with:
+              <img src="assets/images/currency-converter.png"
+                   alt="Currency Converter screenshot"
+                   style="width:100%; border-radius:4px; object-fit:cover;" />
+            ─────────────────────────────────────────────────────────────
+          -->
+          <div class="screenshot-placeholder">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.2" style="opacity:0.3" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            <span>Project Screenshot</span>
+            <span style="font-size:0.55rem; opacity:0.45; margin-top:0.2rem;">
+              Add image to assets/images/
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── Todo with Redux ── -->
+      <div class="project-card fe-card reveal">
+        <div class="project-category fe">Frontend</div>
+        <div class="project-title">Todo — Redux</div>
+        <div class="project-desc">
+          Full-featured task manager with Redux state management. Add, delete, complete, and filter
+          todos — great exercise in global state architecture.
+        </div>
+        <div class="project-tags">
+          <span class="tag fe">React</span>
+          <span class="tag fe">Redux</span>
+          <span class="tag fe">State Mgmt</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/prajdhruv66/React-Projects/tree/main/Todo-with-Redux"
+             target="_blank" rel="noopener" class="project-link">View on GitHub ↗</a>
+        </div>
+      </div>
+
+      <!-- ── Password Generator ── -->
+      <div class="project-card fe-card reveal">
+        <div class="project-category fe">Frontend</div>
+        <div class="project-title">Password Generator</div>
+        <div class="project-desc">
+          Secure random password generator with configurable length, symbols, numbers &amp; uppercase.
+          Uses useCallback, useRef, and the Clipboard API.
+        </div>
+        <div class="project-tags">
+          <span class="tag fe">React</span>
+          <span class="tag fe">useCallback</span>
+          <span class="tag fe">useRef</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/prajdhruv66/React-Projects/tree/main/passwordGen"
+             target="_blank" rel="noopener" class="project-link">View on GitHub ↗</a>
+        </div>
+      </div>
+
+      <!-- ── BG Changer ── -->
+      <div class="project-card fe-card reveal">
+        <div class="project-category fe">Frontend</div>
+        <div class="project-title">BG Changer</div>
+        <div class="project-desc">
+          Interactive background colour switcher — a clean React exercise exploring state,
+          event handling, and dynamic inline styling fundamentals.
+        </div>
+        <div class="project-tags">
+          <span class="tag fe">React</span>
+          <span class="tag fe">useState</span>
+          <span class="tag fe">CSS-in-JS</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/prajdhruv66/React-Projects/tree/main/bgChanger"
+             target="_blank" rel="noopener" class="project-link">View on GitHub ↗</a>
+        </div>
+      </div>
+
+      <!-- ── React Router ── -->
+      <div class="project-card fe-card reveal">
+        <div class="project-category fe">Frontend</div>
+        <div class="project-title">React Router App</div>
+        <div class="project-desc">
+          Multi-page SPA with React Router v6 — nested routes, dynamic params, layout components,
+          and navigation patterns for modern web apps.
+        </div>
+        <div class="project-tags">
+          <span class="tag fe">React</span>
+          <span class="tag fe">React Router v6</span>
+          <span class="tag fe">SPA</span>
+        </div>
+        <div class="project-footer">
+          <a href="https://github.com/prajdhruv66/React-Projects/tree/main/ReactRouter"
+             target="_blank" rel="noopener" class="project-link">View on GitHub ↗</a>
+        </div>
+      </div>
+
+      <!-- ── AI / ML Placeholder ── -->
+      <div class="project-card ai-card reveal">
+        <div class="project-category ai">🔧 AI &amp; ML — In Progress</div>
+        <div class="project-title">ML Project</div>
+        <div class="project-desc">
+          An upcoming machine learning project — classification, regression, or NLP.
+          Replace this card when your first AI/ML project is ready.
+        </div>
+        <div class="project-tags">
+          <span class="tag ai">Python</span>
+          <span class="tag ai">Scikit-learn</span>
+          <span class="tag ai">Jupyter</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-wip">Coming soon ...</span>
+        </div>
+      </div>
+
+      <!-- ── Data Analytics Placeholder ── -->
+      <div class="project-card an-card reveal">
+        <div class="project-category an">🔧 Data Analytics — In Progress</div>
+        <div class="project-title">EDA / Dashboard</div>
+        <div class="project-desc">
+          An exploratory data analysis or interactive dashboard using Pandas, Matplotlib, or Power BI.
+          Replace with your first data project!
+        </div>
+        <div class="project-tags">
+          <span class="tag an">Python</span>
+          <span class="tag an">Pandas</span>
+          <span class="tag an">Matplotlib</span>
+        </div>
+        <div class="project-footer">
+          <span class="project-wip">Coming soon ...</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SUGGESTIONS BANNER
+  ══════════════════════════════════ -->
+  <div class="suggestions-bar reveal">
+    <h4>💡 Recommended Next Steps (for a B.E. Student Portfolio)</h4>
+    <ul>
+      <li>Add a <strong>Resume / CV download</strong> button — recruiters expect it</li>
+      <li><strong>Deploy your React apps</strong> on Vercel / Netlify and add live demo links</li>
+      <li>Build a <strong>Kaggle EDA notebook</strong> — great proof of Data Analytics skills</li>
+      <li>Add a simple <strong>ML project</strong> (house prices, sentiment) even as a Jupyter notebook</li>
+      <li>Add a <strong>Certifications section</strong> (Google DA, Coursera ML, etc.)</li>
+      <li>Write a short <strong>impact statement</strong> per project once you have deploy metrics</li>
+    </ul>
+  </div>
+
+  <!-- ══════════════════════════════════
+       CONTACT
+  ══════════════════════════════════ -->
+  <section id="contact">
+    <div class="reveal">
+      <p class="section-label">Let's Connect</p>
+      <h2 class="section-title">Open to Internships<br/>&amp; Collabs.</h2>
+      <p class="contact-sub">
+        Have an internship opportunity, a project idea, or just want to talk code?
+        I'm always up for it.
+      </p>
+
+      <a href="mailto:prodhruvpraj999@gmail.com" class="contact-email">
+        prodhruvpraj999@gmail.com
+      </a>
+
+      <div class="socials">
+
+        <!-- GitHub -->
+        <a href="https://github.com/prajdhruv66" target="_blank" rel="noopener"
+           class="social-link" title="GitHub" aria-label="GitHub">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/dhruv-prajapati-71939a339/" target="_blank" rel="noopener"
+           class="social-link" title="LinkedIn" aria-label="LinkedIn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/>
+          </svg>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:prodhruvpraj999@gmail.com"
+           class="social-link" title="Email" aria-label="Email">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer>
+    © 2025 Dhruv Prajapati — Built with Three.js &amp; lots of ☕
+  </footer>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Main script -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
