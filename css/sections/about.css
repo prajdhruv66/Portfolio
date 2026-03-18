@@ -1,0 +1,143 @@
+/* ============================================================
+   Section: About
+   ============================================================ */
+
+#about {
+  padding: 9rem 6rem;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+}
+
+.section-label::before { content: '// '; }
+
+.section-title {
+  font-family: 'Syne';
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.4rem;
+}
+
+.about-text {
+  color: var(--muted);
+  line-height: 2;
+  font-size: 0.85rem;
+}
+
+.about-text p + p { margin-top: 1rem; }
+.about-text strong { color: var(--accent); font-weight: 400; }
+
+/* Education / Info Cards */
+.edu-card {
+  background: var(--card);
+  border: 1px solid rgba(0, 255, 224, 0.1);
+  border-radius: 8px;
+  padding: 1.6rem;
+  margin-top: 1.5rem;
+  backdrop-filter: blur(12px);
+}
+
+.edu-label {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+.edu-degree {
+  font-family: 'Syne';
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.edu-school {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-top: 0.3rem;
+}
+
+.edu-year {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.25rem 0.7rem;
+  background: rgba(0, 255, 224, 0.08);
+  border: 1px solid rgba(0, 255, 224, 0.2);
+  border-radius: 3px;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  color: var(--accent);
+}
+
+/* Contact Details List (in About card) */
+.contact-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.73rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.contact-detail-item:hover { color: var(--accent); }
+.contact-detail-item svg { flex-shrink: 0; opacity: 0.6; }
+
+/* Skills */
+.skills-domains {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-domain-title {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+.skill-domain-title.an { color: var(--accent); }
+.skill-domain-title.ai { color: #a07aff; }
+.skill-domain-title.fe { color: var(--accent3); }
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-chip {
+  background: var(--card);
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.82rem;
+  transition: all 0.2s;
+  backdrop-filter: blur(8px);
+}
+
+.skill-chip.an { border: 1px solid rgba(0, 255, 224, 0.12); color: var(--text); }
+.skill-chip.an:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+.skill-chip.ai { border: 1px solid rgba(123, 47, 255, 0.18); color: var(--text); }
+.skill-chip.ai:hover { border-color: #a07aff; color: #a07aff; transform: translateY(-2px); }
+
+.skill-chip.fe { border: 1px solid rgba(255, 107, 53, 0.15); color: var(--text); }
+.skill-chip.fe:hover { border-color: var(--accent3); color: var(--accent3); transform: translateY(-2px); }

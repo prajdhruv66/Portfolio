@@ -1,0 +1,28 @@
+/* ============================================================
+   Utilities: Responsive
+   ============================================================ */
+
+@media (max-width: 960px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { gap: 1.2rem; }
+
+  #hero { padding: 8rem 2rem 4rem; }
+
+  #about {
+    padding: 6rem 2rem;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  #projects { padding: 4rem 2rem 6rem; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card.featured { grid-column: span 1; }
+  .featured-inner { grid-template-columns: 1fr; }
+
+  #stats { padding: 4rem 2rem; gap: 2rem; }
+
+  .suggestions-bar { margin: 0 2rem 2rem; }
+  .suggestions-bar ul { grid-template-columns: 1fr; }
+
+  #contact { padding: 6rem 2rem; }
+}

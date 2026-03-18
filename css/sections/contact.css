@@ -1,0 +1,56 @@
+/* ============================================================
+   Section: Contact
+   ============================================================ */
+
+#contact {
+  padding: 8rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-sub {
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 420px;
+  line-height: 1.9;
+  margin: 1rem 0 2.2rem;
+}
+
+.contact-email {
+  font-family: 'Bebas Neue';
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  color: var(--accent);
+  letter-spacing: 3px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 255, 224, 0.3);
+  padding-bottom: 3px;
+  transition: text-shadow 0.3s;
+}
+
+.contact-email:hover { text-shadow: 0 0 30px var(--accent); }
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.social-link {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 255, 224, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.social-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 20px rgba(0, 255, 224, 0.2);
+}

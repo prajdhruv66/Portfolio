@@ -1,0 +1,75 @@
+/* ============================================================
+   Component: Navigation
+   ============================================================ */
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 4rem;
+  backdrop-filter: blur(14px);
+  background: rgba(5, 8, 16, 0.65);
+  border-bottom: 1px solid rgba(0, 255, 224, 0.07);
+}
+
+.logo {
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: var(--accent);
+  text-shadow: 0 0 18px var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 1px;
+  background: var(--accent);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-github {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border: 1px solid rgba(0, 255, 224, 0.25);
+  border-radius: 3px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  cursor: none;
+  font-family: 'Fira Code';
+}
+
+.nav-github:hover {
+  background: rgba(0, 255, 224, 0.08);
+  border-color: var(--accent);
+}

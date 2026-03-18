@@ -1,0 +1,33 @@
+/* ============================================================
+   Section: Stats
+   ============================================================ */
+
+#stats {
+  padding: 5rem 6rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-num {
+  font-family: 'Bebas Neue';
+  font-size: 5.2rem;
+  line-height: 1;
+  color: var(--accent);
+  text-shadow: 0 0 40px rgba(0, 255, 224, 0.35);
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  letter-spacing: 3px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}

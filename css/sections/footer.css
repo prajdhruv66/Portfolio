@@ -1,0 +1,14 @@
+/* ============================================================
+   Section: Footer
+   ============================================================ */
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  position: relative;
+  z-index: 10;
+}
